@@ -5,18 +5,16 @@
   <title>Task Planning</title>
 </head>
 <body>
-  <form id="taskform" form="usrform" onsubmit="updatePage()">
+  <form id="taskform" onsubmit="updatePage()">
     <fieldset>
       <legend>Task Detail</legend>
         <textarea id="tasktxt" name="comment" rows="8" cols="50" required></textarea>
     </fieldset>
     <fieldset>
       <legend>Ownership</legend>
-      <label id="taskppl"> 
-        <input type="radio" name="owner" value="Tristan">Tristan<br>
-        <input type="radio" name="owner" value="Katie">Katie<br>
-        <input type="radio" name="owner" value="Daniel">Daniel<br>
-      </label>
+      <input type="radio" name="owner" value="Tristan">Tristan<br>
+      <input type="radio" name="owner" value="Katie">Katie<br>
+      <input type="radio" name="owner" value="Daniel">Daniel<br>
     </fieldset>
     <fieldset>
       <legend>Completion Difficulty</legend>
