@@ -1,11 +1,7 @@
 var tasklist = [];
 
-window.onload = function(){
-  drawToPage();
-  var addtask = document.getElementById("addtask");
-  addtask.onclick = updatePage;
-}
 function updatePage() {
+  event.preventDefault();
   var task = document.getElementById("tasktxt").value;
   var ppl = document.getElementById("taskform").elements["owner"].value;
   var diff = document.getElementById("taskdiff").value;

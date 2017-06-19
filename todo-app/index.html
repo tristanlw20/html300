@@ -5,10 +5,10 @@
   <title>Task Planning</title>
 </head>
 <body>
-  <form id="taskform" form="usrform">
+  <form id="taskform" form="usrform" onsubmit="updatePage()">
     <fieldset>
       <legend>Task Detail</legend>
-        <textarea id="tasktxt" name="comment" rows="8" cols="50"></textarea>
+        <textarea id="tasktxt" name="comment" rows="8" cols="50" required></textarea>
     </fieldset>
     <fieldset>
       <legend>Ownership</legend>
@@ -21,7 +21,7 @@
     <fieldset>
       <legend>Completion Difficulty</legend>
       <label> 
-        <select id="taskdiff">
+        <select id="taskdiff" required>
           <option disabled selected value> -- select an option -- </option>
           <option value="Easy">Easy</option>
           <option value="Average">Average</option>
@@ -29,7 +29,7 @@
         </select>
       </label>
     </fieldset>
-    <button id="addtask" type="button">Add Task</button>
+    <input id="addtask" type="submit" value="Add Task">
   </form>
   <fieldset>
     <legend>To Do List</legend>
