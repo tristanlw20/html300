@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task Planning</title>
+</head>
+<body>
+  
+  <form id="taskform">
+    <fieldset>
+      <legend>Task Detail</legend>
+        <textarea id="tasktxt" name="comment" form="usrform" required></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Ownership</legend>
+      <label id="taskppl"> 
+        <input type="radio" name="owner" value="Tristan">Tristan<br>
+        <input type="radio" name="owner" value="Katie">Katie<br>
+        <input type="radio" name="owner" value="Daniel">Daniel<br>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Completion Difficulty</legend>
+      <label> 
+        <select id="taskdiff">
+          <option value="Easy">Easy</option>
+          <option value="Average">Average</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </label>
+    </fieldset>
+  </form>
+  <button id="addtask">Add Task</button>
+  <fieldset>
+    <legend>To Do List</legend>
+    <ul id="todo"></ul>
+  </fieldset>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
