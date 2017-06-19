@@ -5,11 +5,10 @@
   <title>Task Planning</title>
 </head>
 <body>
-  
-  <form id="taskform">
+  <form id="taskform" form="usrform">
     <fieldset>
       <legend>Task Detail</legend>
-        <textarea id="tasktxt" name="comment" form="usrform" required></textarea>
+        <textarea id="tasktxt" name="comment"></textarea>
     </fieldset>
     <fieldset>
       <legend>Ownership</legend>
@@ -23,18 +22,19 @@
       <legend>Completion Difficulty</legend>
       <label> 
         <select id="taskdiff">
+          <option disabled selected value> -- select an option -- </option>
           <option value="Easy">Easy</option>
           <option value="Average">Average</option>
           <option value="Hard">Hard</option>
         </select>
       </label>
     </fieldset>
+    <button id="addtask" type="button">Add Task</button>
   </form>
-  <button id="addtask">Add Task</button>
   <fieldset>
     <legend>To Do List</legend>
     <ul id="todo"></ul>
   </fieldset>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
