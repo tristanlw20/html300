@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Task Planning</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+  <!-- <link rel="stylesheet" href="styles/size.css"> -->
+
 </head>
 <body>
   <form id="taskform" onsubmit="updatePage()">
@@ -29,10 +33,12 @@
     </fieldset>
     <input id="addtask" type="submit" value="Add Task">
   </form>
-  <fieldset>
+  <fieldset id = "todolist">
     <legend>To Do List</legend>
     <ul id="todo"></ul>
   </fieldset>
+  <!--Div that will hold the pie chart-->
+  <div id="chart_div"></div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

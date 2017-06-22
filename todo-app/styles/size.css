@@ -1,0 +1,9 @@
+form, #todolist{
+	display:flex;
+	max-width:50%;
+}
+#chart_div{
+	display:flex;
+	width:50%;
+}
+{
