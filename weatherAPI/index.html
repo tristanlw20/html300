@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Current Weather Conditions</title>
+    <!-- <link rel="stylesheet" href="weather.css"> -->
+  </head>
+  <body>
+    <!-- cc stands for Current Conditions -->
+    <div>
+      <h1> Weather Conditions</h1>
+      <ul id="cc">
+      </ul>
+      <div id="citySelector">
+        <button type="button" onclick="loadLoc(seaCrd)" id="seattle">Seattle</button>
+        <button type="button" onclick="loadLoc(lonCrd)" id="london">London</button>
+        <button type="button" onclick="geoLoc()" id="myLoc">Current Location</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="weather.js"></script>
+  </body>
+</html>
+
+<!-- API Key 4f990a49c6ef8f08d61e20c7cb8df62c -->
