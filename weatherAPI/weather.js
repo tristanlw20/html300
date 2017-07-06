@@ -25,6 +25,7 @@ function loadLoc(Object){
 
 function onloadFunc(){
 	let resp = JSON.parse(this.response) 
+	console.log(resp)
 	let newLi = document.createElement("li")
 	newLi.innerHTML = `There is currently ${resp.weather[0].description} in ${resp.name}`
 	docList.appendChild(newLi)
