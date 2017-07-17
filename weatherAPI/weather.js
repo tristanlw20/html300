@@ -1,5 +1,5 @@
 const mapBase = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather"
-const myKey = "&APPID=4f990a49c6ef8f08d61e20c7cb8df62c"
+const myKey = "&units=imperial&APPID=4f990a49c6ef8f08d61e20c7cb8df62c"
 const docList =document.getElementById("cc")
 
 const lonCrd = { lat: 51.5074, lon: 0.1278}
@@ -24,10 +24,11 @@ function loadLoc(Object){
 }
 
 function onloadFunc(){
-	let resp = JSON.parse(this.response) 
+	let resp = JSON.parse(this.response)
 	console.log(resp)
 	let newLi = document.createElement("li")
-	newLi.innerHTML = `There is currently ${resp.weather[0].description} in ${resp.name}`
+	newLi.innerHTML = `There is currently ${resp.weather[0].description} in ${resp.name}
+	and the temperature is ${resp.main.temp} degrees Fahrenheit.`
 	docList.appendChild(newLi)
 }
 function onerrorFunc(){

@@ -1,0 +1,48 @@
+body {
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial; }
+
+h1 {
+  font-size: 2.5rem;
+  color: #3c3c3c; }
+
+h1, ul, div {
+  text-align: center; }
+
+li {
+  color: #ff0032; }
+
+button {
+  cursor: cell;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #111;
+  border: 0px;
+  padding: 0.5rem; }
+  button:hover, button:active {
+    font-size: 2.5rem; }
+  button:focus {
+    font-size: 2rem;
+    outline: none; }
+  button:hover, button:active, button:focus {
+    background-color: #0431fd;
+    color: #0bc267; }
+
+.button-seattle {
+  background-color: #ca45fd; }
+
+.button-london {
+  background-color: #7c45fd; }
+
+.button-myLoc {
+  background-color: #0431fd; }
+
+/*# sourceMappingURL=stylesheet.css.map */

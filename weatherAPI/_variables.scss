@@ -1,0 +1,29 @@
+//These variables were originally used to satisfy hw 7 but have since been converted
+// to a map to satisfy hw 8 requirements
+  // $black: #111;
+  // $pink: rgb(255, 0, 50);
+  // $grey: rgb(60, 60, 60);
+
+$border: 0px;
+$small-font:2rem;
+$lrg-font:2.5rem;
+$padding:0.5rem;
+$height:100vh;
+
+$fontType: Arial;
+
+$colorMap:(
+  pink: rgb(255, 0, 50),
+  grey: rgb(60, 60, 60),
+  black: #111,
+  green: rgb(11,194,103),
+  blue: rgb(4, 49, 253),
+  purple: rgb(124,69,253),
+  purple2:rgb(202,69,253)
+);
+
+$buttonColors:(
+  seattle:map-get($colorMap, purple2),
+  london: map-get($colorMap, purple),
+  myLoc: map-get($colorMap, blue)
+);

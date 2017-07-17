@@ -1,0 +1,46 @@
+@import "variables";
+
+body {
+  background-color: map-get($colorMap,black);
+  display: flex;
+  height: $height;
+  justify-content: center;
+  font-family: $fontType;
+}
+h1{
+  font-size: $lrg-font;
+  color:map-get($colorMap,grey);
+}
+h1,ul,div{
+    text-align: center;
+}
+li{
+  color:map-get($colorMap,pink);
+}
+button {
+  cursor: cell;
+  font-size: $small-font;
+  transition: all 0.2s ease;
+  color:map-get($colorMap,black);
+  border: $border;
+  padding:$padding;
+
+
+  &:hover, &:active{
+    font-size: $lrg-font;
+  }
+  &:focus{
+    font-size: $small-font;
+    outline:none;
+  }
+  &:hover, &:active, &:focus{
+    background-color: map-get($colorMap,blue);
+    color: map-get($colorMap,green);
+  }
+}
+
+@each $location, $color in $buttonColors{
+  .button-#{$location}{
+    background-color: #{$color};
+  }
+}
